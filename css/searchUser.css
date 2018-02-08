@@ -1,0 +1,13 @@
+body{
+	padding: 0 5%;
+}
+.page{
+	width: 50%;
+	margin-left: 30%;
+}
+.page span{
+	margin: 0 0.7em;
+}
+.page input{
+	width: 2em;
+}

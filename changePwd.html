@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>修改密码</title>
+     <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/personalInfo.css">
+</head>
+<body>
+<form role="form">
+    <table class="table">
+      <caption>修改密码</caption>
+      <tbody>
+          <tr>
+             <td>输入新密码</td>
+              <td><input type="text" class="form-control input-sm" name="pwd" value="{% pwd %}"></td>
+          </tr>
+          <tr>
+              <td>确认新密码</td>
+              <td><input type="text" class="form-control input-sm" name="pwd2" value="{% pwd2 %}"></td>
+          </tr>
+      </tbody>
+
+    </table>
+
+    <button type="submit" class="btn btn-primary">修改</button>
+</form>
+
+
+
+
+
+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

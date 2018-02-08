@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>查询用户</title>
+	 <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/searchUser.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+<table class="table">
+  <caption>用户列表</caption>
+  <thead>
+    <tr>
+     <td><input type="checkbox" onclick="CheckAll(this);" title="全选/取消全选"></td>
+     <td>序号</td>
+     <td>账号</td>
+     <td>姓名</td>
+     <td>性别</td>
+     <td>公司</td>
+     <td>地址</td>
+     <td>邮箱</td>
+     <td>电话</td>
+     <td>添加时间</td>
+     <td>操作</td>
+   </tr>
+  </thead>
+   <tbody>
+    
+   
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="4"> </td>
+     <td>1</td>
+     <td>chensheng</td>
+     <td>陈生</td>
+     <td>女</td>
+     <td>北京贸易公司&nbsp;</td>
+     <td>北京天堂路666号&nbsp;</td>
+     <td>chensheng@163.com&nbsp;</td>
+     <td>15088888884</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=4" data-toggle="modal" data-target="#myModal">编辑</a>
+      </span>
+     </td>
+   </tr> 
+
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+
+<tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+   <tr>
+     <td><input type="checkbox" name="chkid">
+<input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
+     <td>2</td>
+     <td>lichao</td>
+     <td>李超</td>
+     <td>男</td>
+     <td>天津贸易公司&nbsp;</td>
+     <td>天津天堂路666号&nbsp;</td>
+     <td>lichao@163.com&nbsp;</td>
+     <td>15088888887</td>
+     <td>2014-03-01 23:08:44</td>  
+     <td>
+      <span><i class="glyphicon glyphicon-edit"></i>
+        <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
+      </span>
+     </td>
+   </tr> 
+
+</tbody>
+</table>
+<div class="page">
+      <span>首页</span>
+      <span>上一页</span>
+      <span>第<input type="text value="1"> / 10页</span>
+      <span>下一页</span>
+      <span>末页</span>
+
+</div>
+
+
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          编辑用户
+        </h4>
+      </div>
+      <div class="modal-body">
+        <table width="100%" align="center" cellpadding="1" cellspacing="1" class="editbody">
+       <tbody><tr>
+          <td width="15%" align="right" style="padding-right:5px"><font color="red">*</font> 账号：</td>
+          <td width="35%">
+            chensheng
+            
+          </td>
+          <td align="right" style="padding-right:5px"><font color="red">*</font> 密码：</td>
+          <td>
+            
+            <input type="password" name="paramsUser.userPass" value="" id="paramsUser.userPass">
+            
+            
+          </td>
+        </tr> 
+        <tr>
+          <td align="right" style="padding-right:5px"><font color="red">*</font> 姓名：</td>
+          <td>
+            <input type="text" name="paramsUser.realName" value="陈生" id="paramsUser.realName">
+          </td>
+          <td align="right" style="padding-right:5px"><font color="red">*</font> 性别：</td>
+          <td>
+            <input type="radio" id="sex1" name="paramsUser.userSex" value="1">男&nbsp;&nbsp;
+            <input type="radio" id="sex2" name="paramsUser.userSex" value="2">女
+          </td>
+        </tr>   
+        <tr>
+          <td align="right" style="padding-right:5px">公司：</td>
+          <td>
+            <input type="text" name="paramsUser.userCompany" value="北京贸易公司" id="paramsUser.userCompany">
+          </td> 
+          <td align="right" style="padding-right:5px">地址：</td>
+          <td>
+            <input type="text" name="paramsUser.userAddress" value="北京天堂路666号" id="paramsUser.userAddress">
+          </td>
+        </tr>
+        <tr>
+          <td align="right" style="padding-right:5px">邮箱：</td>
+          <td>
+            <input type="text" name="paramsUser.userMail" value="chensheng@163.com" id="paramsUser.userMail">
+          </td> 
+          <td align="right" style="padding-right:5px">电话：</td>
+          <td>
+            <input type="text" name="paramsUser.userPhone" value="15088888884" id="paramsUser.userPhone">
+          </td>
+        </tr>
+     </tbody></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+        </button>
+        <button type="button" class="btn btn-primary">
+          提交更改
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+
+ <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

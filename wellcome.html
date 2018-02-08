@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>欢迎页面</title>
+	<!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wellcome.css">
+</head>
+<body>
+	<div class="main">
+		<img src="img/swt-icon-express.png">
+		<p id="time1">今天是
+		<p>{%username%}欢迎你访问快递管理系统</p>
+	</div>
+
+	<div class="img-ab">
+		<div class="right-bottom-r1"></div>
+		<!-- <img src="img/welcome-0-2.png" class="right-bottom-r3"> -->
+		<img src="img/welcome-2-1.png" class="left-bottom">
+		<img src="img/welcome-2-2.png" class="center-bottom-r2">
+		<!-- <img src="img/welcome-1-2.png" class="right-bottom-r2"> -->
+		<img src="img/welcome-right.png" class="right-bottom-r2">
+	</div>
+
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+    function showtime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time1").innerHTML = "今天是 "+c+"&nbsp"+b;
+        }
+    setInterval(function() {showtime()},1000);
+</script>
+
+
+</body>
+</html>

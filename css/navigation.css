@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(41,42,43);
+    border-style: none;
+}
+
+.addition{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height:40px;
+	width: 200px;
+	background-color: rgb(74,84,110);
+	color: #fff;
+	line-height: 40px;
+	font-size: 1.2em;
+}
