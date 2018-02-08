@@ -6,9 +6,7 @@
     <!-- Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/register.css">
-    <!--单选按钮样式插件来源：http://www.htmleaf.com/Demo/201508262477.html-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css"/>
+
 
 </head>
 <body>
@@ -60,15 +58,15 @@
                         <div class="mask"></div>
                         <span class="input-group-addon"><i class="glyphicon glyphicon-adjust"></i></span>
                         <input type="text" class="form-control" placeholder="请选择性别"/>
+                        <!--mask-->
                         <div style="position: absolute;left: 60%;width:30%;height:100%;z-index: 9;overflow:hidden;">
-                            <div class="radio radio-info radio-inline">
-                                <input type="radio" name="sex" id="radio1" value="option1" checked>
-                                <label for="radio1">男</label>
-                            </div>
-                            <div class="radio radio-success radio-inline">
-                                <input type="radio" name="sex" id="radio41" value="option2">
-                                <label for="radio1">女</label>
-                            </div>
+
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" id="optionsRadios3" value="男" checked> 男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" id="optionsRadios4"  value="女"> 女
+                            </label>
                         </div>
                     </div>
                 </div>

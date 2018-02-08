@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>查询配送员</title>
+    <title>查询车辆</title>
     <!-- Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/searchUser.css">
@@ -11,18 +11,14 @@
 </head>
 <body>
 <table class="table">
-    <caption>配送员列表</caption>
+    <caption>用户列表</caption>
     <thead>
     <tr>
         <td><input type="checkbox" onclick="CheckAll(this);" title="全选/取消全选"></td>
         <td>序号</td>
-        <td>账号</td>
-        <td>姓名</td>
-        <td>性别</td>
-        <td>邮箱</td>
-        <td>电话</td>
-        <td>添加时间</td>
-        <td>状态</td>
+        <td>车辆型号</td>
+        <td>车牌号</td>
+        <td>车辆状态</td>
         <td>操作</td>
     </tr>
     </thead>
@@ -33,13 +29,9 @@
         <td><input type="checkbox" name="chkid">
             <input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="4"> </td>
         <td>1</td>
-        <td>chensheng</td>
-        <td>陈生</td>
-        <td>女</td>
-        <td>chensheng@163.com&nbsp;</td>
-        <td>15088888884</td>
-        <td>2014-03-01 23:08:44</td>
-        <td>无任务</td>
+        <td>东风小康</td>
+        <td>川AE0987</td>
+        <td>闲置</td>
         <td>
       <span><i class="glyphicon glyphicon-edit"></i>
         <a href="Admin_editUser.action?paramsUser.userId=4" data-toggle="modal" data-target="#myModal">编辑</a>
@@ -51,13 +43,9 @@
         <td><input type="checkbox" name="chkid">
             <input type="hidden" id="__checkbox_chkid" name="__checkbox_chkid" value="5"> </td>
         <td>2</td>
-        <td>lichao</td>
-        <td>李超</td>
-        <td>男</td>
-        <td>lichao@163.com&nbsp;</td>
-        <td>15088888887</td>
-        <td>2014-03-01 23:08:44</td>
-        <td>无任务</td>
+        <td>皮卡</td>
+        <td>川BC2987</td>
+        <td>闲置</td>
         <td>
       <span><i class="glyphicon glyphicon-edit"></i>
         <a href="Admin_editUser.action?paramsUser.userId=5">编辑</a>
@@ -78,8 +66,6 @@
 </div>
 
 
-
-
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -89,45 +75,30 @@
                     &times;
                 </button>
                 <h4 class="modal-title" id="myModalLabel">
-                    编辑配送员
+                    编辑车辆
                 </h4>
             </div>
             <div class="modal-body">
-                <table width="100%" align="center" cellpadding="1" cellspacing="1" class="editbody">
-                    <tbody><tr>
-                        <td width="15%" align="right" style="padding-right:5px"><font color="red">*</font> 账号：</td>
-                        <td width="35%">
-                            chensheng
-
-                        </td>
-                        <td align="right" style="padding-right:5px"><font color="red">*</font> 姓名：</td>
-                        <td>
-                            <input type="text" name="paramsUser.realName" value="陈生" id=""  class="form-control">
+                <table width="80%" align="center" cellpadding="1" cellspacing="1" class="editbody">
+                    <tbody>
+                    <tr>
+                        <td align="right" style="padding-right:5px"><font color="red">*</font> 车辆型号：</td>
+                        <td >
+                            <input type="text" name="paramsUser.realName" value="东风小康" id=""  class="form-control">
                         </td>
                     </tr>
                     <tr>
-
-                        <td align="right" style="padding-right:5px"><font color="red">*</font> 性别：</td>
-                        <td>
-                            <label class="radio-inline"><input type="radio" id="sex1" name="paramsUser.userSex" value="1">男</label>
-                            <label class="radio-inline"><input type="radio" id="sex2" name="paramsUser.userSex" value="2">女</label>
-                        </td>
-                        <td align="right" style="padding-right:5px">邮箱：</td>
-                        <td>
-                            <input type="text" name="paramsUser.userMail" value="chensheng@163.com" id="paramsUser.userMail"  class="form-control">
+                        <td align="right" style="padding-right:5px"><font color="red">*</font> 车牌号：</td>
+                        <td >
+                            <input type="text" name="paramsUser.realName" value="川AE0987" id=""  class="form-control" disabled>
                         </td>
                     </tr>
-
                     <tr>
-                        <td align="right" style="padding-right:5px">电话：</td>
-                        <td>
-                            <input type="text" name="paramsUser.userPhone" value="15088888884" id="paramsUser.userPhone"  class="form-control">
-                        </td>
-                        <td align="right" style="padding-right:5px"><font color="red">*</font> 状态：</td>
+                        <td align="right" style="padding-right:5px">状态：</td>
                         <td>
                             <select name="zt"  class="form-control">
-                                <option value="">无任务</option>
-                                <option value="">配送中</option>
+                                <option value="">闲置</option>
+                                <option value="">在用</option>
                             </select>
                         </td>
                     </tr>

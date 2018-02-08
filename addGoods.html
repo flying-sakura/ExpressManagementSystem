@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加货物</title>
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/personalInfo.css">
+</head>
+<body>
+<form role="form">
+    <table class="table">
+        <caption>添加货物</caption>
+        <tbody>
+        <tr>
+            <td><font color="red">*</font> 货物编号</td>
+            <td><input type="text" class="form-control input-sm" name="" value="{% goodsnum %}"></td>
+        </tr>
+        <tr>
+            <td><font color="red">*</font> 货物名称</td>
+            <td><input type="text" class="form-control input-sm" name="" value="{% goodsname %}"></td>
+        </tr>
+        <tr>
+            <td><font color="red">*</font> 货物数量</td>
+            <td>
+                <input type="text" class="form-control" name="paramsPurchase.purchaseDate" value="{% goodsamount %}" id="paramsPurchase.purchaseDate" onfocus="WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd'})">
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="padding-right:5px">货物说明：</td>
+            <td>
+                <textarea class="form-control" name="" id="" rows="4"></textarea>
+            </td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <button type="submit" class="btn btn-primary">添加</button>
+</form>
+
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
