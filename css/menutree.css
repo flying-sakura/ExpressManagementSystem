@@ -11,7 +11,11 @@ body{
     background-color: rgb(66,72,91);
     cursor: hand;
 }
-#tree h3,li{
+/*#tree h3,li{*/
+    /*font-size: 14px;*/
+    /*padding: 10px 0;*/
+/*}*/
+#tree h3{
     font-size: 14px;
     padding: 10px 0;
 }
@@ -31,7 +35,9 @@ body{
     background-color: rgb(100,149,169);
 }
 #tree li a{
-    display: inline-block;
+    display: block;
+    width: 200px;
+    padding: 10px 0;
     color: #ffffff;
     text-decoration:none;
 }
