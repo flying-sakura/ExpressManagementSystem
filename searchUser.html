@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
+
+<div class="serach-group">
+    账号：<input type="text" class="myinput">
+    姓名：<input type="text" class="myinput">
+    <button class="btn btn-sm btn-primary">搜索</button>
+    <button type="button" class="btn btn-sm btn-danger">删除选定</button>
+</div>
+
+
 <table class="table">
   <caption>用户列表</caption>
   <thead>
     <tr>
      <td><input type="checkbox" onclick="CheckAll(this);" title="全选/取消全选"></td>
-     <td>序号</td>
+     <td>#</td>
      <td>账号</td>
      <td>姓名</td>
      <td>性别</td>
@@ -74,11 +83,11 @@
 <div class="page">
       <span>首页</span>
       <span>上一页</span>
-      <span>第<input type="text value="1"> / 10页</span>
+      <span>第<input class="myinput text-center" type="text" value="1" maxlength="3"> / 10页</span>
       <span>下一页</span>
       <span>末页</span>
-
 </div>
+
 
 
 

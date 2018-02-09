@@ -6,8 +6,25 @@ body{
 	margin-left: 30%;
 }
 .page span{
-	margin: 0 0.7em;
+	margin: 0 0.5em;
 }
 .page input{
 	width: 2em;
+}
+.serach-group{;
+	float: right;
+	margin-bottom: -20px;
+}
+
+.myinput{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+@media screen and (max-width: 855px) {
+
+
+	/*分辨率过低则隐藏表格中#一栏*/
+	td:nth-child(2){
+		display: none;
+	}
 }

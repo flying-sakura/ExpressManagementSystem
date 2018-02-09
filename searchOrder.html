@@ -6,16 +6,26 @@
     <title>查询订单</title>
     <!-- Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/searchOrder.css">
     <link rel="stylesheet" href="css/searchUser.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
+<div class="serach-group">
+    订单编号：<input type="text" class="myinput">
+    订货人：<input type="text" class="myinput">
+    货物名称：<input type="text" class="myinput">
+    下单日期：<input type="text" class="myinput">
+    <button class="btn btn-sm btn-primary">搜索</button>
+    <button type="button" class="btn btn-sm btn-danger">删除选定</button>
+</div>
+
 <table class="table">
     <caption>订单列表</caption>
     <thead>
     <tr>
         <td><input type="checkbox" onclick="CheckAll(this);" title="全选/取消全选"></td>
-        <td>序号</td>
+        <td>#</td>
         <td>订单编号</td>
         <td>订货人</td>
         <td>货物名称</td>
@@ -55,7 +65,7 @@
 <div class="page">
     <span>首页</span>
     <span>上一页</span>
-    <span>第<input type="text" value="1"> / 10页</span>
+    <span>第<input class="myinput text-center" type="text" value="1" maxlength="3"> / 10页</span>
     <span>下一页</span>
     <span>末页</span>
 
@@ -110,7 +120,7 @@
                     <tr>
                         <td align="right" style="padding-right:5px">下单日期：</td>
                         <td>
-                            <textarea class="form-control">2018-02-08</textarea>
+                            <input class="form-control" value="2018-02-08"></input>
                         </td>
                     </tr>
                     <tr>

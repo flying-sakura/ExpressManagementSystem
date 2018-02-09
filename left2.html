@@ -1,0 +1,41 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单树2</title>
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menutree.css">
+</head>
+<body>
+<div id="tree" class="text-left"  onselectstart="return false">
+    <div>
+        <h3><span><i class="glyphicon glyphicon-chevron-right"></i>个人中心</span></h3>
+        <ul>
+            <li><a href="personalInfo.html" target="right"><span><i class="glyphicon glyphicon-user"></i>个人信息</span></a></li>
+            <li><a href="changePwd.html" target="right"><span><i class="glyphicon glyphicon-pencil"></i>修改密码</span></a></li>
+        </ul>
+    </div>
+
+    <div >
+        <h3><span><i class="glyphicon glyphicon-chevron-right"></i>货物管理</span></h3>
+        <ul>
+            <li><a href="searchGoods.html" target="right"><span><i class="glyphicon glyphicon-search"></i>查询货物</span></a></li>
+            <li><a href="addGoods.html" target="right"><span><i class="glyphicon glyphicon-plus-sign"></i>添加货物</span></a></li>
+        </ul>
+    </div>
+
+    <div >
+        <h3><span><i class="glyphicon glyphicon-chevron-right"></i>订单管理</span></h3>
+        <ul>
+            <li><a href="searchOrder.html" target="right"><span><i class="glyphicon glyphicon-shopping-cart"></i>查询订单</span></a></li>
+        </ul>
+    </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://static.runoob.com/assets/js/jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
+<script src="js/menutree.js"></script>
+</body>
+</html>

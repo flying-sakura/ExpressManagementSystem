@@ -1,0 +1,11 @@
+@media screen and (max-width: 1230px) {
+    /*在低分辨（<1280）的屏幕下，该页面不能正常显示，需要进行适当调整*/
+    .serach-group{
+        float: right;
+    }
+    .serach-group .myinput{
+        max-width: 100px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+}
