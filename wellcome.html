@@ -10,16 +10,49 @@
 
 </head>
 <body>
-	<div class="main">
-		<img src="img/swt-icon-express.png">
-		<p id="time1">今天是
-		<p>{%username%}欢迎你访问快递管理系统</p>
-	</div>
+		<div class="main" style="margin-left:5%;">
+			<img src="img/swt-icon-express.png">
+			<p id="time1">今天是</p>
+			<p >{%username%}欢迎你访问快递管理系统</p>
+		</div>
+		<div class="searchBox" style="margin-top: -4em;margin-right: 5%;float: right;">
+			<form class="form-inline" role="form" method="get" action="searchLogistics.html">
+				<div class="form-group">
+					<select name="com" class="form-control">
+						<option value="Yuantong">圆通</option>
+						<option value="Zhongtong">中通</option>
+						<option value="Shentong">申通</option>
+						<option value="Huitong">汇通</option>
+						<option value="Shunfeng">顺丰</option>
+						<option value="Yunda">韵达</option>
+						<option value="Youzheng">邮政</option>
+						<option value="Tiantian">天天</option>
+						<option value="Quanfeng">全峰</option>
+					</select>
+				</div>
+			  <div class="input-group">
+				<input name="expressNo" type="text" class="form-control" placeholder="输入快递单号">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="submit">查询</button>
+				</span>
+			</div>
+			</form>
+		</div>
+
+
+		
+	
+
+
+</form>
+		
+
 	
 	<div id="myCarousel" style="margin:10px 0;padding:0 20%;background-color:#8b8b8b;">
 		<img src="img/201405271129463177.png" style="width:100%;">
 	</div>
 	
+
 	
 
 	<div class="img-ab">

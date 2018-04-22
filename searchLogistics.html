@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>物流查询</title>
+	<!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/table.css">
+</head>
+<body  style="padding: 0 5%;">
+<div class="searchBox" style="float: right;">
+	<form class="form-inline" role="form" method="get" action="searchLogistics.html">
+		<div class="form-group">
+			<select name="com" class="form-control">
+				<option value="Yuantong">圆通</option>
+				<option value="Zhongtong">中通</option>
+				<option value="Shentong">申通</option>
+				<option value="Huitong">汇通</option>
+				<option value="Shunfeng">顺丰</option>
+				<option value="Yunda">韵达</option>
+				<option value="Youzheng">邮政</option>
+				<option value="Tiantian">天天</option>
+				<option value="Quanfeng">全峰</option>
+			</select>
+		</div>
+	  <div class="input-group">
+		<input name="expressNo" type="text" class="form-control" placeholder="输入快递单号">
+		<span class="input-group-btn">
+			<button class="btn btn-primary" type="submit">查询</button>
+		</span>
+	</div>
+	</form>
+</div>
+
+
+<table class="table">
+    <caption>{%快递公司名称%}</caption>
+    <thead>
+    <tr>
+        <td>时间</td>
+        <td>记事</td>
+    </tr>
+    </thead>
+    <tbody>
+	<tr>
+		<td>2018-04-22 14:20</td>
+		<td>在广东省广州市**公司进行揽件扫描</td>
+	</tr>
+	<tr>
+		<td>2018-04-22 10:00</td>
+		<td>已发货，等待揽件</td>
+	</tr>
+    </tbody>
+</table>
+
+
+
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	</script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	</script>
+
+
+</body>
+</html>
