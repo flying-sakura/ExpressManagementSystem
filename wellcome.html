@@ -5,6 +5,9 @@
 	<!-- Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/wellcome.css">
+	<!--轮播图样式 -->
+
+
 </head>
 <body>
 	<div class="main">
@@ -12,6 +15,12 @@
 		<p id="time1">今天是
 		<p>{%username%}欢迎你访问快递管理系统</p>
 	</div>
+	
+	<div id="myCarousel" style="margin:10px 0;padding:0 20%;background-color:#8b8b8b;">
+		<img src="img/201405271129463177.png" style="width:100%;">
+	</div>
+	
+	
 
 	<div class="img-ab">
 		<div class="right-bottom-r1"></div>
@@ -25,6 +34,22 @@
 
 	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!--轮播图-->
+	<script>
+	imgIndex = 0;
+	imgColor = ["rgb(139,139,139)","rgb(43,123,212)","rgb(222,228,229)"]
+	imgPath = ["img/201405271129463177.png","img/201401251118078087.png","img/201401251118126532.png"];
+	CarouselImg = document.getElementById('myCarousel').getElementsByTagName('img')[0];
+	
+	setInterval(function() {
+	imgIndex = (imgIndex+1)%3;
+	CarouselImg.setAttribute('src',imgPath[imgIndex]);
+	document.getElementById('myCarousel').style.backgroundColor = imgColor[imgIndex];
+
+	},5000);
+	</script>
+	
+</script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script>

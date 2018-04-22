@@ -41,6 +41,12 @@ html,body,div,img{
 	width: 3.2em;
 	margin-right: 1em;
 }
+
+
+.img-ab{
+	margin-bottom: 0;
+	margin-left: 0;
+}
 .left-bottom{
 	position: absolute;
 	width: 26%;
